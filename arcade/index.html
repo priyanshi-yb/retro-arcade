@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retro Arcade</title>
+  <link rel="stylesheet" href="css/arcade.css">
+</head>
+<body>
+  <header>
+    <h1>Retro Arcade</h1>
+    <p class="tagline">Two games. One cabinet.</p>
+  </header>
+
+  <div class="cabinet">
+    <canvas id="screen"></canvas>
+    <nav id="menu" class="menu">
+      <h2>Select game</h2>
+      <ul id="game-list"></ul>
+      <p class="hint">Click a game, or use ↑ ↓ and Enter</p>
+    </nav>
+  </div>
+
+  <section class="info">
+    <h2>How to play</h2>
+    <p>Pick a game from the menu. Esc always returns to the menu.</p>
+
+    <h2>Scoreboard</h2>
+    <p>High scores will appear here once games save them.</p>
+
+    <h2>About</h2>
+    <p>Retro Arcade is a team project: each game is built by a different developer,
+       but every game follows the same arcade style guide.</p>
+  </section>
+
+  <script src="src/arcade.js"></script>
+  <script src="games/snake.js"></script>
+  <script src="games/breakout.js"></script>
+</body>
+</html>
